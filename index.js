@@ -20,6 +20,6 @@ class Formatter {
    }
   
   })
-   return arrPro.join(' ').charAt(0).toUpperCase() + arrPro.slice(1);
+   return arrPro.join(' ').charAt(0).toUpperCase() + arrPro.join(' ').slice(1);
   }
 }
