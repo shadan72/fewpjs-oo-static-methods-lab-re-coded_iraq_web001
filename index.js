@@ -12,10 +12,11 @@ class Formatter {
   nameArr.map(word =>{
    if(word !== 'the' && word !=='a' && word !=='an' && word !=='but' && word !=='of'&& word !=='and' && word !=='for' && word !=='at' && word !=='by' && word !=='from')
    {
-     arrPro.push(word);
+     arrPro.push(word.charAt(0).toUpperCase() + word.slice(1));
+    
    }
    else{
-    arrPro.push(word.charAt(0).toUpperCase() + word.slice(1));
+     arrPro.push(word);
    }
     return arrPro.join(' ').charAt(0).toUpperCase() + arrPro.slice(1);
   
