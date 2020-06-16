@@ -18,8 +18,9 @@ class Formatter {
    else{
      arrPro.push(word);
    }
-    return arrPro.join(' ').charAt(0).toUpperCase() + arrPro.slice(1);
+   
   
   })
+   return arrPro.join(' ').charAt(0).toUpperCase() + arrPro.slice(1);
   }
 }
