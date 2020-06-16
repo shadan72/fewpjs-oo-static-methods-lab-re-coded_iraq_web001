@@ -8,7 +8,7 @@ class Formatter {
   }
   static titleize(name){
   let arrPro=[]
-  let nameArr=name.split(" ");
+  let nameArr=name.split(' ');
   nameArr.map(word =>{
    if(word === 'the' || word ==='a' || word ==='an' || word ==='but' || word ==='of'|| word ==='and' || word ==='for' || word ==='at' || word ==='by' || word ==='from')
    {
@@ -17,7 +17,7 @@ class Formatter {
    else{
     arrPro.push(word.charAt(0).toUpperCase() + word.slice(1));
    }
-   
+    return arrPro.join(' ').charAt(0).toUpperCase() + arrPro.slice(1);
   
   })
   }
